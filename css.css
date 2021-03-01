@@ -1,0 +1,142 @@
+.home-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "welcome-text"
+    "home-para"
+    "nav-wrapper";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+@media (max-width: 700px){
+  #welcome-text{
+    width:50%;
+  }
+    i{
+ font-size: 80% ;
+ position: relative;
+ left: 0px;
+ justify-content: start;
+    }
+     .nav-wrapper{
+       position: absolute;
+       width: 30%;
+       font-size: 90%;
+       margin-top: 50%;
+       
+     }
+     #home-para{
+       position:relative;
+       left: 0%;
+       font-size: 95%;
+    
+}
+
+      .about-div{
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-areas: 
+      "nav-sec"
+      "content"
+      "skills"
+      "project-sec"
+      "form-sec"
+      "footer-area";
+      grid-template-columns:1fr;
+      grid-template-rows: minmax();
+      grid-gap: 10px;
+  }
+
+  #nav-sec{
+    grid-column: span 2;
+  }
+ #skills{
+   grid-column: span 2;
+   grid-row: 3/5;
+ }
+
+  @media (max-width: 445px){
+    .about-img{
+      width: 90%;
+      height:90%;
+      left:10%;
+    }
+    .nav{
+      display:inline;
+      padding:-2px;
+    }
+    #nav-sec{
+      position: fixed;
+      grid-column: span2;
+      display:inherit;
+      width:100%;
+      height: 10%;
+      top:0%;
+      padding:-2%;
+      z-index: inherit 2;
+      font-size: 2%;
+      left: 0px;
+      padding-left: -20%;
+
+
+    }
+    #navBar a{
+      float: none;
+      width: 5%;
+      padding-left: -10%;
+      display: block;
+      text-align: left;
+    }
+    .large-head{
+      margin-top:10%;
+      margin-bottom:-6%;
+    }
+    #paragraph{
+      width: fit-content;
+    padding-left:-15%;
+      font-size: 45%;
+    }
+
+    .footer-images{
+      width: 35px;
+      height: 35px;
+      margin-top:5%;
+      margin-bottom: 100%;
+      padding: 3%;
+    }
+   .skill-img{
+     width: 35px;
+     height: 35px;
+     margin-top:5%;
+     margin-bottom: 100%;
+     padding: 3%;
+   }
+   #skills{
+     height: 210px;
+     width:95%;
+     margin-bottom:10%;
+   }
+
+  .large-head{
+    font-size: 250%;
+  }
+   
+#project-sec{
+  top:3%;
+  margin-bottom:5%;
+  width: 100%;
+  height:235px;
+  background-color: rgb(99, 124, 99);
+
+}
+#form-sec{
+ margin-top:10%;
+ padding-top:1%;
+}
+
+}
